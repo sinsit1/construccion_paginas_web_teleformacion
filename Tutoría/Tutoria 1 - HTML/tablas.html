@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tablas en HTML</title>
+</head>
+<body>
+
+    <h1>Tablas en HTML</h1>
+
+    <h2>Tabla simple (sin etiquetas semánticas)</h2>
+
+    <table border="1">
+        <tr>
+            <td>Nombre</td>
+            <td>Edad</td>
+            <td>Ciudad</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>30</td>
+            <td>Madrid</td>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>25</td>
+            <td>Barcelona</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Tabla con etiquetas semánticas</h2>
+
+    <table border="1">
+        <caption>Listado de personas</caption>
+
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ana</td>
+                <td>30</td>
+                <td>Madrid</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>25</td>
+                <td>Barcelona</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Datos de ejemplo</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
