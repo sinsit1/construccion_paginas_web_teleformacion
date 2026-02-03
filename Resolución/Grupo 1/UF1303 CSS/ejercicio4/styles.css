@@ -1,0 +1,104 @@
+body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fff5f7;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        header img {
+            width: 60px;
+            margin-right: 15px;
+        }
+
+        header h1 {
+            color: #b3002d;
+            font-size: 28px;
+        }
+
+        .hero {
+            background-image: url("https://images.unsplash.com/photo-1519682577862-22b62b24e493");
+            background-size: cover;
+            background-position: center;
+            height: 420px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.55);
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .cta-button {
+            background-color: #e60039;
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        .cta-button:hover {
+            background-color: #b3002d;
+        }
+
+        .testimonios {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .testimonios h3 {
+            font-size: 30px;
+            color: #b3002d;
+            margin-bottom: 30px;
+        }
+
+        .testimonial {
+            max-width: 700px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .testimonial p {
+            font-style: italic;
+        }
+
+        .testimonial span {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #e60039;
+        }
+
+        footer {
+            background-color: #b3002d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }

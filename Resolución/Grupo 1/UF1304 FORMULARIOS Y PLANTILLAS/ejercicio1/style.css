@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 40px;
+}
+
+.wrapper {
+  max-width: 950px;
+  margin: auto;
+  background: #ffffff;
+  border: 2px solid #cfcfcf;
+  padding: 30px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+/* Secciones */
+fieldset {
+  border: 2px solid #bdbdbd;
+  margin-bottom: 25px;
+  padding: 20px;
+  background: #fafafa;
+}
+
+legend {
+  font-weight: bold;
+}
+
+/* Grid */
+.row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 220px;
+}
+
+/* Controles */
+label {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.required::after {
+  content: " *";
+  color: red;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  padding: 8px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Foco accesible */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid #999;
+}
+
+/* Radios */
+.radio-group {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Ayuda */
+small {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Botón */
+button {
+  margin-top: 15px;
+  padding: 12px 24px;
+  font-size: 16px;
+  background: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #222;
+}
