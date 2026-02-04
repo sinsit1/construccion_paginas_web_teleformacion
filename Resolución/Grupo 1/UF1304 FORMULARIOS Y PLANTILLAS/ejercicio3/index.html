@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario seguro vehículo</title>
+
+</head>
+
+<body>
+
+<form action="#" method="post">
+
+    <!-- ===== DATOS PERSONALES ===== -->
+    <fieldset>
+        <legend>Datos personales</legend>
+
+        <div class="flex-group">
+
+            <div class="field">
+                <label>Nombre *</label>
+                <input type="text" name="nombre" required>
+            </div>
+
+            <div class="field">
+                <label>Apellidos *</label>
+                <input type="text" name="apellidos" required>
+            </div>
+
+            <div class="field">
+                <label>DNI *</label>
+                <input type="text" name="dni" pattern="[0-9]{8}[A-Za-z]" placeholder="12345678A" required>
+            </div>
+
+            <div class="field">
+                <label>Correo electrónico *</label>
+                <input type="email" name="email" required>
+            </div>
+
+            <div class="field">
+                <label>Sexo *</label>
+                <select name="sexo" required>
+                    <option value="">Seleccione...</option>
+                    <option>Hombre</option>
+                    <option>Mujer</option>
+                    <option>Prefiero no decirlo</option>
+                </select>
+            </div>
+
+        </div>
+    </fieldset>
+
+
+    <!-- ===== DIRECCIÓN ===== -->
+    <fieldset>
+        <legend>Dirección</legend>
+
+        <div class="flex-group">
+
+            <div class="field">
+                <label>Calle *</label>
+                <input type="text" name="calle" required>
+            </div>
+
+            <div class="field">
+                <label>Número *</label>
+                <input type="number" name="numero" min="1" required>
+            </div>
+
+            <div class="field">
+                <label>Código postal *</label>
+                <input type="text" name="cp" pattern="[0-9]{5}" required>
+            </div>
+
+            <div class="field">
+                <label>Ciudad *</label>
+                <input type="text" name="ciudad" required>
+            </div>
+
+            <div class="field">
+                <label>Provincia *</label>
+                <input type="text" name="provincia" required>
+            </div>
+
+        </div>
+    </fieldset>
+
+
+    <!-- ===== VEHÍCULO ===== -->
+    <fieldset>
+        <legend>Datos del vehículo</legend>
+
+        <div class="flex-group">
+
+            <div class="field">
+                <label>Marca *</label>
+                <input type="text" name="marca" required>
+            </div>
+
+            <div class="field">
+                <label>Modelo *</label>
+                <input type="text" name="modelo" required>
+            </div>
+
+            <div class="field">
+                <label>Color</label>
+                <input type="text" name="color">
+            </div>
+
+            <div class="field">
+                <label>Matrícula *</label>
+                <input type="text" name="matricula" required>
+            </div>
+
+            <div class="field">
+                <label>Año matriculación *</label>
+                <input type="number" name="anio" min="1980" max="2099" required>
+            </div>
+
+        </div>
+    </fieldset>
+
+
+    <!-- ===== OPCIONES ===== -->
+    <fieldset>
+        <legend>Opciones adicionales</legend>
+
+        <div class="checkboxes">
+            <label>
+                <input type="checkbox" name="boletin" checked>
+                Deseo suscribirme al boletín mensual
+            </label>
+
+            <label>
+                <input type="checkbox" name="terminos" required>
+                Acepto los términos de uso y privacidad *
+            </label>
+        </div>
+    </fieldset>
+
+    <button type="submit">Enviar</button>
+
+</form>
+
+</body>
+</html>
